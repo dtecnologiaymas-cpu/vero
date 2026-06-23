@@ -3,65 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Título de la página para Google -->
-    <title>Diseños VeRo | Ingeniería Textil y Confección en Ciudad Serdán</title>
-    
-    <!-- Palabras clave y descripción para optimizar la búsqueda en Google -->
-    <meta name="description" content="Diseños VeRo en Ciudad Serdán. Especialistas en ingeniería textil y confecciones para uniformes escolares, graduaciones, bandas musicales, quinceaños, bodas, trajes para hombre, composturas y arreglos. Especialistas en vestimenta de imágenes.">
-    <meta name="keywords" content="ciudad serdán, diseños textiles, diseños y confecciones para: uniformes escolares, graduaciones, bandas musicales, quinceaños, bodas, trajes para hombre, composturas, arreglos, especialistas en vestimenta de imagenes, Diseños VeRo">
+    <title>Diseños VeRo - Ingeniería Textil & Confección Industrial</title>
+
+    <!-- META ETIQUETAS SEO BÁSICAS -->
+    <meta name="description" content="Taller de costura industrial y alta costura liderado por una Ingeniera Textil en Ciudad Serdán, Puebla. Especialistas en uniformes escolares, de graduación y vestidos religiosos.">
+    <meta name="keywords" content="Diseños VeRo, ingenieria textil, confeccion industrial, taller de costura, uniformes escolares, vestidos de graduacion, bandas musicales, vestidos de quinceañera, trajes de caballero, remiendos, Ciudad Serdan, Puebla">
     <meta name="author" content="Diseños VeRo">
+    <meta name="robots" content="index, follow">
 
+    <!-- META ETIQUETAS PARA COMPARTIR EN REDES SOCIALES (Open Graph / WhatsApp / Facebook) -->
+    <meta property="og:title" content="Diseños VeRo - Ingeniería Textil & Confección Industrial">
+    <meta property="og:description" content="Calidad, precisión y más de 15 años de experiencia en alta costura y uniformes industriales en Puebla y estados vecinos.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://www.disenosvero.com">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Alex+Brush&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGold: '#b89253',
+                        brandDarkBlue: '#0f1e36',
+                        brandBeige: '#fcf9f2',
+                        brandCream: '#f4ece1',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                        script: ['Alex Brush', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f7f3ed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
+        .bg-silk-texture {
+            background-color: #fcf9f2;
+            background-image: radial-gradient(circle at 100% 150%, #f4ece1 24%, white 25%, white 28%, #f4ece1 29%, #fcf9f2 36%);
         }
-
-        .contenedor-web {
-            max-width: 800px;
-            width: 100%;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        }
-
-        .enlace-whatsapp {
-            display: block;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-
-        .enlace-whatsapp:hover {
-            transform: scale(1.002);
-            filter: brightness(98%);
-        }
-
-        .imagen-flyer {
-            width: 100%;
-            height: auto;
-            display: block;
+        .arch-frame {
+            border-top-left-radius: 9999px;
+            border-top-right-radius: 9999px;
+            border: 2px solid #e2d7c7;
         }
     </style>
 </head>
-<body>
+<body class="bg-silk-texture font-sans text-gray-800 antialiased selection:bg-brandGold selection:text-white relative">
 
-    <div class="contenedor-web">
-        <!-- Enlace con el teléfono 2451542640 y el texto codificado: Te visité de tu página web, necesito información -->
-        <a href="https://wa.me/522451542640?text=Te%20visit%C3%A9%20de%20tu%20p%C3%A1gina%20web" 
-           class="enlace-whatsapp" 
-           target="_blank" 
-           title="Haz clic aquí para contactarnos por WhatsApp">
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+       title="Contáctanos por WhatsApp">
+        <!-- Efecto de pulso en el fondo -->
+        <span class="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping group-hover:hidden"></span>
+        <!-- Icono SVG Oficial de WhatsApp -->
+        <svg class="w-7 h-7 relative z-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- MENÚ DE NAVEGACIÓN SUPERIOR: Alineado a la derecha -->
+    <header class="max-w-7xl mx-auto px-6 py-6 flex justify-center md:justify-end items-center z-50 relative">
+        <nav class="flex space-x-6 lg:space-x-8 text-xs uppercase tracking-widest font-medium text-gray-600">
+            <a href="#inicio" class="text-brandGold border-b border-brandGold pb-1">Inicio</a>
+            <a href="#nosotros" class="hover:text-brandGold transition-colors">Nosotros</a>
+            <a href="#servicios" class="hover:text-brandGold transition-colors">Servicios</a>
+            <a href="#proyectos" class="hover:text-brandGold transition-colors">Proyectos</a>
+            <a href="#cobertura" class="hover:text-brandGold transition-colors">Cobertura</a>
+            <a href="#contacto" class="hover:text-brandGold transition-colors">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN INICIO CON LOGO INTEGRADO EN EL BLOQUE IZQUIERDO -->
+    <section id="inicio" class="max-w-7xl mx-auto px-6 pt-2 pb-20 relative min-h-[650px] flex items-center">
+        <div class="absolute inset-0 z-0 pointer-events-none hidden md:block [mask-image:linear-gradient(to_right,transparent_0%,black_90%)]">
+            <img src="imagenlateral2.png" alt="Taller Diseños VeRo" class="w-full h-full object-cover object-right">
+        </div>
+        
+        <div class="max-w-md md:max-w-lg space-y-6 z-10 relative bg-transparent flex flex-col items-start">
+            <div class="mb-4 -ml-2">
+                <img src="logo.png" alt="Diseños VeRo" class="h-32 md:h-44 w-auto object-contain">
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
+                Diseñamos y confeccionamos <br>
+                <span class="font-script text-5xl md:text-6xl text-brandGold tracking-wide block mt-2 normal-case">experiencias</span>
+            </h1>
+            <p class="text-md text-gray-600 font-medium font-serif italic">
+                Con ingeniería, precisión y pasión por cada detalle.
+            </p>
+            <div class="w-12 h-[1px] bg-brandGold/60 my-4"></div>
+            <p class="text-sm text-gray-500 leading-relaxed max-w-sm">
+                Taller de costura industrial liderado por una Ingeniera Textil en Ciudad Serdán, Puebla.
+            </p>
             
-            <!-- Recuerda cambiar el nombre de este archivo por el de tu imagen real si es necesario -->
-            <img src="verodiseno.jpeg" alt="Diseños VeRo - Ingeniería Textil y Confección Industrial" class="imagen-flyer">
+            <div class="grid grid-cols-4 gap-2 pt-6 text-center w-full">
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl text-brandGold mb-1">🪡</span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600">Confección Industrial</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl text-brandGold mb-1">📐</span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600">Ingeniería Textil</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl text-brandGold mb-1">👗</span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600">Diseño Personalizado</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl text-brandGold mb-1">✨</span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600">Calidad y Compromiso</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-4 right-12 md:right-24 bg-brandDarkBlue text-brandCream rounded-full w-44 h-44 flex flex-col justify-center items-center text-center p-4 shadow-xl border-4 border-brandCream z-20">
+            <p class="text-[10px] tracking-widest uppercase font-light mb-1 text-brandGold">Hecho con</p>
+            <p class="text-xs tracking-widest uppercase font-semibold">Experiencia,</p>
+            <p class="text-[10px] tracking-widest uppercase font-light my-1 text-brandGold">Entregado con</p>
+            <p class="text-xs tracking-widest uppercase font-semibold">Orgullo</p>
+            <div class="text-brandGold text-xs mt-1">✦ ✦ ✦</div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="bg-gradient-to-b from-transparent to-brandCream/40 py-20 px-6 border-t border-brandCream">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="text-xs uppercase tracking-widest text-brandGold font-semibold">Nuestros Servicios</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-900 mt-2 mb-12">
+                Creamos para cada momento <span class="font-script text-4xl md:text-5xl text-brandGold tracking-wide normal-case inline-block align-middle ml-1">importante</span>
+            </h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4">
+                <div class="flex flex-col items-center group">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Uniformes Escolares">
+                    </div>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Uniformes Escolares</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Graduaciones">
+                    </div>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Graduaciones</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bandas Musicales">
+                    </div>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Bandas Musicales y Marching Band</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Quinceaños">
+                    </div>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Quinceaños</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1546032994-380d6363a047?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bodas">
+                    </div>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Bodas</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trajes para Hombre">
+                    </div>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Trajes para Hombre</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1528570288079-118bc3569710?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Composturas">
+                    </div>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Composturas y Arreglos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS / COBERTURA -->
+    <section id="nosotros" class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div class="lg:col-span-6 space-y-6">
+            <h2 class="text-2xl font-serif text-gray-900">
+                INGENIERÍA TEXTIL <br>
+                <span class="italic text-brandGold font-normal">al servicio de la moda</span>
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Cada prenda es desarrollada con conocimientos técnicos en materiales, patronaje, procesos y control de calidad, garantizando durabilidad, confort y un acabado impecable de nivel industrial.
+            </p>
             
-        </a>
-    </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm">
+                    <div class="text-xl mb-1">📐</div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800">Diseño y Patronaje</h4>
+                    <p class="text-[11px] text-gray-500 mt-1">Asesoría experta en la selección de materiales.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm">
+                    <div class="text-xl mb-1">⚙️</div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800">Producción Industrial</h4>
+                    <p class="text-[11px] text-gray-500 mt-1">Escalabilidad óptima para grandes volúmenes.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm">
+                    <div class="text-xl mb-1">🔎</div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800">Control de Calidad</h4>
+                    <p class="text-[11px] text-gray-500 mt-1">Supervisión minuciosa en cada etapa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cobertura" class="lg:col-span-6 space-y-6 bg-brandCream/30 p-8 rounded-2xl border border-brandCream">
+            <h3 class="text-xs uppercase tracking-widest text-gray-500 text-center font-semibold">Hemos llevado nuestro trabajo a:</h3>
+            
+            <div class="flex justify-between items-center max-w-md mx-auto pt-4 relative">
+                <div class="absolute h-[1px] bg-dashed bg-brandGold/40 left-6 right-6 top-1/3 -z-10 border-t border-dashed border-brandGold"></div>
+                
+                <div class="text-center">
+                    <span class="text-2xl block mb-1">⛪</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Puebla</span>
+                </div>
+                <div class="text-center">
+                    <span class="text-2xl block mb-1">⛪</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Tlaxcala</span>
+                </div>
+                <div class="text-center">
+                    <span class="text-2xl block mb-1">⛪</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Veracruz</span>
+                </div>
+                <div class="text-center">
+                    <span class="text-2xl block mb-1">⛪</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">EdoMex</span>
+                </div>
+            </div>
+
+            <div class="text-center pt-6">
+                <p class="font-serif italic text-lg text-brandGold font-medium">
+                    "Especialistas en vestir imágenes de iglesias"
+                </p>
+                <p class="text-xs text-gray-400 mt-1 font-light">Más de 15 años respaldando nuestra devoción y calidad artesanal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA AZUL MARINO -->
+    <footer id="contacto" class="bg-brandDarkBlue text-brandCream pt-16 pb-8 px-6 rounded-t-[2.5rem] shadow-inner relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center border-b border-white/10 pb-12">
+            
+            <div class="space-y-3">
+                <img src="logo.png" alt="Diseños VeRo" class="h-28 w-auto object-contain brightness-0 invert opacity-90">
+            </div>
+
+            <div class="text-center md:text-left">
+                <p class="font-serif italic text-xl text-white font-light leading-relaxed">
+                    Más que confección, <br>
+                    <span class="font-script text-3xl text-brandGold tracking-wide normal-case">creamos identidad.</span>
+                </p>
+                <p class="text-[10px] uppercase tracking-widest text-gray-400 mt-2">Más de 15 años de trayectoria</p>
+            </div>
+
+            <div class="space-y-3 text-sm font-light text-gray-300">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-brandGold">Diseños VeRo</h4>
+                <p class="flex items-center space-x-2">
+                    <span>📍</span> <span>Ciudad Serdán, Puebla</span>
+                </p>
+                <p class="flex items-center space-x-2 font-medium text-white">
+                    <span>📞</span> <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n" target="_blank" class="hover:text-brandGold transition-colors">245 154 2640</a>
+                </p>
+                <p class="flex items-center space-x-2">
+                    <span>✉️</span> <a href="mailto:disenosvero@taller.com" class="hover:text-brandGold transition-colors">disenosvero@taller.com</a>
+                </p>
+                
+                <div class="flex space-x-4 pt-3 text-lg">
+                    <a href="#" class="hover:text-brandGold transition-colors" title="Facebook">📘</a>
+                    <a href="#" class="hover:text-brandGold transition-colors" title="Instagram">📸</a>
+                    <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n" target="_blank" class="hover:text-brandGold transition-colors" title="WhatsApp">💬</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-500">
+            <p>&copy; 2026 Diseños VeRo. Todos los derechos reservados.</p>
+            <p class="mt-2 sm:mt-0">Orgullosamente desarrollado en Ciudad Serdán, Pue.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
