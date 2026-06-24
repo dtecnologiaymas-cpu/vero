@@ -67,8 +67,8 @@
     </a>
 
     <!-- MENÚ DE NAVEGACIÓN SUPERIOR -->
-    <header class="max-w-7xl mx-auto px-6 py-6 flex justify-center md:justify-end items-center z-50 relative">
-        <nav class="flex space-x-6 lg:space-x-8 text-xs uppercase tracking-widest font-medium text-gray-600">
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex justify-center md:justify-end items-center z-50 relative">
+        <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:space-x-6 lg:space-x-8 text-xs uppercase tracking-widest font-medium text-gray-600">
             <a href="#inicio" class="text-brandGold border-b border-brandGold pb-1">Inicio</a>
             <a href="#nosotros" class="hover:text-brandGold transition-colors">Nosotros</a>
             <a href="#servicios" class="hover:text-brandGold transition-colors">Servicios</a>
@@ -78,125 +78,132 @@
         </nav>
     </header>
 
-    <!-- SECCIÓN INICIO CON DIFUMINADO ARRIBA, ABAJO Y AL COSTADO -->
-    <section id="inicio" class="max-w-7xl mx-auto px-6 pt-2 pb-20 relative min-h-[650px] flex items-center">
-        <!-- Modificación aplicada aquí usando máscaras CSS múltiples (lineal vertical + lineal horizontal) -->
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="max-w-7xl mx-auto px-4 sm:px-6 pt-2 pb-16 md:pb-20 relative min-h-[550px] md:min-h-[650px] flex flex-col md:flex-row md:items-center">
+        <!-- Imagen lateral de fondo optimizada para pantallas grandes -->
         <div class="absolute inset-0 z-0 pointer-events-none hidden md:block [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%),linear-gradient(to_right,transparent_0%,black_90%)] [mask-composite:intersect]">
             <img src="imagenlateral2.png" alt="Taller Diseños VeRo" class="w-full h-full object-cover object-right">
         </div>
         
-        <div class="max-w-md md:max-w-lg space-y-6 z-10 relative bg-transparent flex flex-col items-start">
-            <div class="mb-4 -ml-2">
-                <img src="logo.png" alt="Diseños VeRo" class="h-32 md:h-44 w-auto object-contain">
+        <div class="max-w-md md:max-w-lg space-y-6 z-10 relative bg-transparent flex flex-col items-center md:items-start text-center md:text-left w-full mt-4 md:mt-0">
+            <div class="mb-2 md:mb-4 md:-ml-2">
+                <img src="logo.png" alt="Diseños VeRo" class="h-28 sm:h-32 md:h-44 w-auto object-contain">
             </div>
 
-            <h1 class="text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
                 Diseñamos y confeccionamos <br>
-                <span class="font-script text-5xl md:text-6xl text-brandGold tracking-wide block mt-2 normal-case">experiencias</span>
+                <span class="font-script text-4xl sm:text-5xl md:text-6xl text-brandGold tracking-wide block mt-2 normal-case">experiencias</span>
             </h1>
-            <p class="text-md text-gray-600 font-medium font-serif italic">
+            <p class="text-sm sm:text-md text-gray-600 font-medium font-serif italic">
                 Con ingeniería, precisión y pasión por cada detalle.
             </p>
- <div class="w-2px h-1px bg-brandGold/0 my-4"><img src="carrete.png" alt="Diseños VeRo" class="h-11 md:h-11 w-auto object-contain"></div> 
-            <p class="text-sm text-gray-500 leading-relaxed max-w-sm">
+            <div class="w-full flex justify-center md:justify-start my-2">
+                <img src="carrete.png" alt="Diseños VeRo" class="h-10 md:h-11 w-auto object-contain">
+            </div> 
+            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed max-w-sm">
                 Taller de costura industrial en Ciudad Serdán, Puebla.
             </p>
             
-            <div class="grid grid-cols-4 gap-2 pt-6 text-center w-full">
+            <!-- Grid de características responsivo -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 text-center w-full">
                 <div class="flex flex-col items-center">
-                    <span class="text-2xl text-brandGold mb-1"> <img src="MAQUINA.png" alt="Diseños VeRo" class="h-8 md:h-11 w-auto object-contain"></span>
-                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600">Confección Industrial</span>
+                    <span class="mb-1"> <img src="MAQUINA.png" alt="Confección" class="h-8 md:h-11 w-auto object-contain"></span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1">Confección Industrial</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <span class="text-2xl text-brandGold mb-1"><img src="hilos.png" alt="Diseños VeRo" class="h-8 md:h-11 w-auto object-contain"></span>
-                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600">Ingeniería Textil</span>
+                    <span class="mb-1"><img src="hilos.png" alt="Ingeniería" class="h-8 md:h-11 w-auto object-contain"></span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1">Ingeniería Textil</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <span class="text-2xl text-brandGold mb-1"><img src="personalizado.png" alt="Diseños VeRo" class="h-8 md:h-11 w-auto object-contain"></span>
-                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600">Diseño Personalizado</span>
+                    <span class="mb-1"><img src="personalizado.png" alt="Diseño" class="h-8 md:h-11 w-auto object-contain"></span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1">Diseño Personalizado</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <span class="text-2xl text-brandGold mb-1"><img src="calidad.png" alt="Diseños VeRo" class="h-8 md:h-11 w-auto object-contain"></span>
-                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600">Calidad y Compromiso</span>
+                    <span class="mb-1"><img src="calidad.png" alt="Calidad" class="h-8 md:h-11 w-auto object-contain"></span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1">Calidad y Compromiso</span>
                 </div>
             </div>
         </div>
 
-        <div class="absolute bottom-4 right-12 md:right-24 bg-brandDarkBlue text-brandCream rounded-full w-44 h-44 flex flex-col justify-center items-center text-center p-4 shadow-xl border-4 border-brandCream z-20">
-            <p class="text-[10px] tracking-widest uppercase font-light mb-1 text-brandGold">Hecho con</p>
+        <!-- Círculo de experiencia adaptado para fluir debajo en móviles -->
+        <div class="relative mt-10 md:mt-0 md:absolute bottom-4 right-4 lg:right-24 bg-brandDarkBlue text-brandCream rounded-full w-40 h-40 sm:w-44 sm:h-44 flex flex-col justify-center items-center text-center p-4 shadow-xl border-4 border-brandCream z-20 mx-auto md:mx-0">
+            <p class="text-[9px] sm:text-[10px] tracking-widest uppercase font-light mb-1 text-brandGold">Hecho con</p>
             <p class="text-xs tracking-widest uppercase font-semibold">Experiencia,</p>
-            <p class="text-[10px] tracking-widest uppercase font-light my-1 text-brandGold">Entregado con</p>
+            <p class="text-[9px] sm:text-[10px] tracking-widest uppercase font-light my-1 text-brandGold">Entregado con</p>
             <p class="text-xs tracking-widest uppercase font-semibold">Orgullo</p>
             <div class="text-brandGold text-xs mt-1">✦ ✦ ✦</div>
         </div>
     </section>
 
     <!-- SECCIÓN SERVICIOS -->
-    <section id="servicios" class="bg-gradient-to-b from-transparent to-brandCream/40 py-20 px-6 border-t border-brandCream">
+    <section id="servicios" class="bg-gradient-to-b from-transparent to-brandCream/40 py-16 md:py-20 px-4 sm:px-6 border-t border-brandCream">
         <div class="max-w-7xl mx-auto text-center">
             <span class="text-xs uppercase tracking-widest text-brandGold font-semibold">Nuestros Servicios</span>
-            <h2 class="text-3xl md:text-4xl font-serif text-gray-900 mt-2 mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-gray-900 mt-2 mb-10 md:mb-12">
                 Creamos para cada momento <span class="font-script text-4xl md:text-5xl text-brandGold tracking-wide normal-case inline-block align-middle ml-1">importante</span>
             </h2>
 
-            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4">
+            <!-- Grid de servicios responsivo (de 1 columna en móviles a 7 en pantallas gigantes) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 sm:gap-4">
                 <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
                         <img src="uniformes.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Uniformes Escolares">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Uniformes Escolares</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Uniformes Escolares</h3>
                 </div>
                 <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
                         <img src="graduaciones.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Graduaciones">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Graduaciones</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Graduaciones</h3>
                 </div>
                 <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
                         <img src="bandasmusicales.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bandas Musicales">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Bandas Musicales y Marching Band</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Bandas Musicales y Marching Band</h3>
                 </div>
                 <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
                         <img src="quinceanos.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Quinceaños">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Quinceaños</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Quinceaños</h3>
                 </div>
                 <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
                         <img src="bodas.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bodas">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Bodas</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Bodas</h3>
                 </div>
                 <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
                         <img src="trajeshombres.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trajes para Hombre">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Trajes para Hombre</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Trajes para Hombre</h3>
                 </div>
                 <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
+                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
                         <img src="composturas.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Composturas">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-4 text-center">Composturas y Arreglos</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Composturas y Arreglos</h3>
                 </div>
             </div>
         </div>
     </section>
-   <!-- SECCIÓN NOSOTROS / COBERTURA -->
-    <section id="nosotros" class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+    <!-- SECCIÓN NOSOTROS / COBERTURA -->
+    <section id="nosotros" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
         <div class="lg:col-span-6 space-y-6">
-            <h2 class="text-2xl font-serif text-gray-900">
+            <h2 class="text-xl sm:text-2xl font-serif text-gray-900">
                 INGENIERÍA TEXTIL <br>
                 <span class="italic text-brandGold font-normal">al servicio de la moda</span>
             </h2>
-            <p class="text-sm text-gray-600 leading-relaxed">
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
                 Cada prenda es desarrollada con conocimientos técnicos en materiales, patronaje, procesos y control de calidad, garantizando durabilidad, confort y un acabado impecable de nivel industrial.
             </p>
             
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+            <!-- Cards de ingeniería responsivas -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm">
                     <div class="text-xl mb-1">📐</div>
                     <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800">Diseño y Patronaje</h4>
@@ -215,56 +222,57 @@
             </div>
         </div>
 
-        <div id="cobertura" class="lg:col-span-6 space-y-6 bg-brandCream/30 p-8 rounded-2xl border border-brandCream">
+        <div id="cobertura" class="lg:col-span-6 space-y-6 bg-brandCream/30 p-6 sm:p-8 rounded-2xl border border-brandCream">
             <h3 class="text-xs uppercase tracking-widest text-gray-500 text-center font-semibold">Hemos llevado nuestro trabajo a:</h3>
             
-            <div class="flex justify-between items-center max-w-md mx-auto pt-4 relative">
-                <div class="absolute h-[1px] bg-dashed bg-brandGold/40 left-6 right-6 top-1/3 -z-10 border-t border-dashed border-brandGold"></div>
+            <!-- Flujo de estados responsivo (pasa a dos filas si el espacio es muy reducido) -->
+            <div class="flex flex-wrap justify-center sm:justify-between items-center gap-6 sm:gap-4 max-w-md mx-auto pt-4 relative">
+                <div class="absolute h-[1px] bg-dashed bg-brandGold/40 left-6 right-6 top-1/3 -z-10 border-t border-dashed border-brandGold hidden sm:block"></div>
                 
-                <div class="text-center">
+                <div class="text-center min-w-[70px]">
                     <span class="text-2xl block mb-1">⛪</span>
                     <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Puebla</span>
                 </div>
-                <div class="text-center">
+                <div class="text-center min-w-[70px]">
                     <span class="text-2xl block mb-1">⛪</span>
                     <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Tlaxcala</span>
                 </div>
-                <div class="text-center">
+                <div class="text-center min-w-[70px]">
                     <span class="text-2xl block mb-1">⛪</span>
                     <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Veracruz</span>
                 </div>
-                <div class="text-center">
+                <div class="text-center min-w-[70px]">
                     <span class="text-2xl block mb-1">⛪</span>
                     <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">EdoMex</span>
                 </div>
             </div>
 
-            <div class="text-center pt-6">
-                <p class="font-serif italic text-lg text-brandGold font-medium">
+            <div class="text-center pt-4 sm:pt-6">
+                <p class="font-serif italic text-base sm:text-lg text-brandGold font-medium">
                     "Especialistas en vestir imágenes de iglesias"
                 </p>
-                <p class="text-xs text-gray-400 mt-1 font-light">Más de 15 años respaldando nuestra devoción y calidad artesanal.</p>
+                <p class="text-[11px] sm:text-xs text-gray-400 mt-1 font-light">Más de 15 años respaldando nuestra devoción y calidad artesanal.</p>
             </div>
         </div>
     </section>
 
     <!-- PIE DE PÁGINA -->
-    <footer id="contacto" class="bg-brandDarkBlue text-brandCream pt-16 pb-8 px-6 rounded-t-[2.5rem] shadow-inner relative overflow-hidden">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center border-b border-white/10 pb-12">
+    <footer id="contacto" class="bg-brandDarkBlue text-brandCream pt-12 md:pt-16 pb-8 px-4 sm:px-6 rounded-t-[2rem] sm:rounded-t-[2.5rem] shadow-inner relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 items-center text-center md:text-left border-b border-white/10 pb-10 md:pb-12">
             
-            <div class="space-y-3">
-                <img src="logo.png" alt="Diseños VeRo" class="h-28 w-auto object-contain brightness-0 invert opacity-90">
+            <div class="flex justify-center md:justify-start space-y-3">
+                <img src="logo.png" alt="Diseños VeRo" class="h-24 md:h-28 w-auto object-contain brightness-0 invert opacity-90">
             </div>
 
-            <div class="text-center md:text-left">
-                <p class="font-serif italic text-xl text-white font-light leading-relaxed">
-                    Más que confección, <br>
+            <div class="space-y-1">
+                <p class="font-serif italic text-lg sm:text-xl text-white font-light leading-relaxed">
+                    Más que confección, <br class="hidden md:block">
                     <span class="font-script text-3xl text-brandGold tracking-wide normal-case">creamos identidad.</span>
                 </p>
-                <p class="text-[10px] uppercase tracking-widest text-gray-400 mt-2">Más de 15 años de trayectoria</p>
+                <p class="text-[10px] uppercase tracking-widest text-gray-400 pt-1">Más de 15 años de trayectoria</p>
             </div>
 
-            <div class="space-y-3 text-sm font-light text-gray-300">
+            <div class="space-y-3 text-xs sm:text-sm font-light text-gray-300 flex flex-col items-center md:items-start">
                 <h4 class="text-xs font-bold uppercase tracking-widest text-brandGold">Diseños VeRo</h4>
                 <p class="flex items-center space-x-2">
                     <span>📍</span> <span>Ciudad Serdán, Puebla</span>
@@ -276,7 +284,7 @@
                     <span>✉️</span> <a href="mailto:disenosvero@taller.com" class="hover:text-brandGold transition-colors">disenosvero@taller.com</a>
                 </p>
                 
-                <div class="flex space-x-4 pt-3 text-lg">
+                <div class="flex space-x-5 pt-2 text-lg">
                     <a href="#" class="hover:text-brandGold transition-colors" title="Facebook">📘</a>
                     <a href="#" class="hover:text-brandGold transition-colors" title="Instagram">📸</a>
                     <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n.%0AMi%20nombre%20es%3A%20" target="_blank" class="hover:text-brandGold transition-colors" title="WhatsApp">💬</a>
@@ -284,9 +292,9 @@
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-500">
+        <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-[11px] text-gray-500 text-center sm:text-left">
             <p>&copy; 2026 Diseños VeRo. Todos los derechos reservados.</p>
-            <p class="mt-2 sm:mt-0">Orgullosamente desarrollado en Ciudad Serdán, Pue.</p>
+            <p>Orgullosamente desarrollado en Ciudad Serdán, Pue.</p>
         </div>
     </footer>
 
