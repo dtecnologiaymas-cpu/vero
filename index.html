@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VZJE3H0MF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,20 +13,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseños VeRo - Ingeniería Textil & Confección Industrial</title>
 
-    <!-- META ETIQUETAS SEO BÁSICAS -->
     <meta name="description" content="Taller de costura industrial y alta costura liderado por una Ingeniera Textil en Ciudad Serdán, Puebla. Especialistas en uniformes escolares, de graduación y vestidos religiosos.">
     <meta name="keywords" content="Diseños VeRo, ingenieria textil, Modista, confeccion industrial, taller de costura, uniformes escolares, vestidos de graduacion, bandas musicales, vestidos de quinceañera, trajes de caballero, Confeccion de Ropa, Ajustes, Remiendos, Ciudad Serdan, Puebla">
     <meta name="author" content="Diseños VeRo">
     <meta name="robots" content="index, follow">
 
-    <!-- META ETIQUETAS PARA COMPARTIR EN REDES SOCIALES (Open Graph / WhatsApp / Facebook) -->
     <meta property="og:title" content="Diseños VeRo - Ingeniería Textil & Confección Industrial">
     <meta property="og:description" content="Calidad, precisión y más de 15 años de experiencia en alta costura y uniformes industriales en Puebla y estados vecinos.">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="https://www.disenosvero.com">
     <meta property="og:type" content="website">
 
-    <!-- Tailwind & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Alex+Brush&display=swap" rel="stylesheet">
     <script>
@@ -59,157 +55,171 @@
             border-top-right-radius: 9999px;
             border: 2px solid #e2d7c7;
         }
+        /* Animaciones profesionales de carga */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
     </style>
 </head>
 <body class="bg-silk-texture font-sans text-gray-800 antialiased selection:bg-brandGold selection:text-white relative">
 
-    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
     <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n.%0AMi%20nombre%20es%3A%20" 
        target="_blank" 
        rel="noopener noreferrer" 
-       class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+       class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 active:scale-95 transition-all duration-300 ease-out flex items-center justify-center group"
        title="Contáctanos por WhatsApp">
         <span class="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping group-hover:hidden"></span>
-        <svg class="w-7 h-7 relative z-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-6 h-6 sm:w-7 sm:h-7 relative z-10 transition-transform duration-300 group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
     </a>
 
-    <!-- MENÚ DE NAVEGACIÓN SUPERIOR -->
-    <header class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex justify-center md:justify-end items-center z-50 relative">
-        <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:space-x-6 lg:space-x-8 text-xs uppercase tracking-widest font-medium text-gray-600">
-            <a href="#inicio" class="text-brandGold border-b border-brandGold pb-1">Inicio</a>
-            <a href="#nosotros" class="hover:text-brandGold transition-colors">Nosotros</a>
-            <a href="#servicios" class="hover:text-brandGold transition-colors">Servicios</a>
-            <a href="#proyectos" class="hover:text-brandGold transition-colors">Proyectos</a>
-            <a href="#cobertura" class="hover:text-brandGold transition-colors">Cobertura</a>
-            <a href="#contacto" class="hover:text-brandGold transition-colors">Contacto</a>
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex justify-center md:justify-end items-center z-50 relative animate-fade-in">
+        <nav class="flex flex-wrap justify-center gap-x-3 gap-y-2 md:space-x-6 lg:space-x-8 text-[10px] sm:text-xs uppercase tracking-widest font-medium text-gray-600">
+            <a href="#inicio" class="text-brandGold border-b border-brandGold pb-1 transition-all duration-300">Inicio</a>
+            <a href="#nosotros" class="hover:text-brandGold hover:translate-y-[-1px] transition-all duration-300">Nosotros</a>
+            <a href="#servicios" class="hover:text-brandGold hover:translate-y-[-1px] transition-all duration-300">Servicios</a>
+            <a href="#proyectos" class="hover:text-brandGold hover:translate-y-[-1px] transition-all duration-300">Proyectos</a>
+            <a href="#cobertura" class="hover:text-brandGold hover:translate-y-[-1px] transition-all duration-300">Cobertura</a>
+            <a href="#contacto" class="hover:text-brandGold hover:translate-y-[-1px] transition-all duration-300">Contacto</a>
         </nav>
     </header>
 
-    <!-- SECCIÓN INICIO -->
-    <section id="inicio" class="max-w-7xl mx-auto px-4 sm:px-6 pt-2 pb-16 md:pb-20 relative min-h-[550px] md:min-h-[650px] flex flex-col md:flex-row md:items-center justify-between gap-8">
+    <section id="inicio" class="max-w-7xl mx-auto px-4 sm:px-6 pt-2 pb-12 md:pb-20 relative min-h-[500px] md:min-h-[650px] flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-8">
         
-        <!-- [MODIFICACIÓN] Imagen de fondo sólo para pantallas medianas/grandes -->
-        <div class="absolute inset-0 z-0 pointer-events-none hidden md:block [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%),linear-gradient(to_right,transparent_0%,black_90%)] [mask-composite:intersect]">
-            <img src="imagenlateral2.png" alt="Taller Diseños VeRo" class="w-full h-full object-cover object-right">
+        <div class="absolute inset-0 z-0 pointer-events-none hidden md:block [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%),linear-gradient(to_right,transparent_0%,black_90%)] [mask-composite:intersect] animate-fade-in">
+            <img src="imagenlateral2.png" alt="Taller Diseños VeRo" class="w-full h-full object-cover object-right transition-transform duration-1000 ease-out scale-100 hover:scale-102">
         </div>
         
-        <div class="max-w-md md:max-w-lg space-y-6 z-10 relative bg-transparent flex flex-col items-center md:items-start text-center md:text-left w-full mt-4 md:mt-0">
-            <div class="mb-2 md:mb-4 md:-ml-2">
-                <img src="logo.png" alt="Diseños VeRo" class="h-28 sm:h-32 md:h-44 w-auto object-contain">
+        <div class="max-w-md md:max-w-lg space-y-4 sm:space-y-6 z-10 relative bg-transparent flex flex-col items-center md:items-start text-center md:text-left w-full mt-2 md:mt-0 opacity-0 animate-fade-in-up">
+            <div class="mb-1 md:mb-4 md:-ml-2 transition-transform duration-500 hover:scale-105">
+                <img src="logo.png" alt="Diseños VeRo" class="h-24 sm:h-32 md:h-44 w-auto object-contain">
             </div>
 
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl font-serif text-gray-900 leading-tight">
                 Diseñamos y confeccionamos <br>
-                <span class="font-script text-4xl sm:text-5xl md:text-6xl text-brandGold tracking-wide block mt-2 normal-case">experiencias</span>
+                <span class="font-script text-3xl sm:text-5xl md:text-6xl text-brandGold tracking-wide block mt-1 sm:mt-2 normal-case hover:scale-102 transition-transform duration-300 origin-center md:origin-left">experiencias</span>
             </h1>
-            <p class="text-sm sm:text-md text-gray-600 font-medium font-serif italic">
+            <p class="text-xs sm:text-md text-gray-600 font-medium font-serif italic opacity-0 animate-fade-in-up delay-100">
                 Con ingeniería, precisión y pasión por cada detalle.
             </p>
-            <div class="w-full flex justify-center md:justify-start my-2">
-                <img src="carrete.png" alt="Diseños VeRo" class="h-10 md:h-11 w-auto object-contain">
+            <div class="w-full flex justify-center md:justify-start my-1 opacity-0 animate-fade-in-up delay-200">
+                <img src="carrete.png" alt="Diseños VeRo" class="h-8 md:h-11 w-auto object-contain animate-pulse">
             </div> 
-            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed max-w-sm">
+            <p class="text-[11px] sm:text-sm text-gray-500 leading-relaxed max-w-sm opacity-0 animate-fade-in-up delay-200">
                 Taller de costura industrial en Ciudad Serdán, Puebla.
             </p>
             
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 text-center w-full">
-                <div class="flex flex-col items-center">
-                    <span class="mb-1"> <img src="MAQUINA.png" alt="Confección" class="h-8 md:h-11 w-auto object-contain"></span>
-                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1">Confección Industrial</span>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-4 text-center w-full opacity-0 animate-fade-in-up delay-300">
+                <div class="flex flex-col items-center group cursor-default">
+                    <span class="mb-1 transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1 block"> <img src="MAQUINA.png" alt="Confección" class="h-8 md:h-11 w-auto object-contain"></span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1 transition-colors duration-300 group-hover:text-brandGold">Confección Industrial</span>
                 </div>
-                <div class="flex flex-col items-center">
-                    <span class="mb-1"><img src="hilos.png" alt="Ingeniería" class="h-8 md:h-11 w-auto object-contain"></span>
-                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1">Ingeniería Textil</span>
+                <div class="flex flex-col items-center group cursor-default">
+                    <span class="mb-1 transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1 block"><img src="hilos.png" alt="Ingeniería" class="h-8 md:h-11 w-auto object-contain"></span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1 transition-colors duration-300 group-hover:text-brandGold">Ingeniería Textil</span>
                 </div>
-                <div class="flex flex-col items-center">
-                    <span class="mb-1"><img src="personalizado.png" alt="Diseño" class="h-8 md:h-11 w-auto object-contain"></span>
-                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1">Diseño Personalizado</span>
+                <div class="flex flex-col items-center group cursor-default">
+                    <span class="mb-1 transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1 block"><img src="personalizado.png" alt="Diseño" class="h-8 md:h-11 w-auto object-contain"></span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1 transition-colors duration-300 group-hover:text-brandGold">Diseño Personalizado</span>
                 </div>
-                <div class="flex flex-col items-center">
-                    <span class="mb-1"><img src="calidad.png" alt="Calidad" class="h-8 md:h-11 w-auto object-contain"></span>
-                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1">Calidad y Compromiso</span>
+                <div class="flex flex-col items-center group cursor-default">
+                    <span class="mb-1 transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1 block"><img src="calidad.png" alt="Calidad" class="h-8 md:h-11 w-auto object-contain"></span>
+                    <span class="text-[9px] font-semibold tracking-wider uppercase text-gray-600 mt-1 transition-colors duration-300 group-hover:text-brandGold">Calidad y Compromiso</span>
                 </div>
             </div>
         </div>
 
-        <!-- [MODIFICACIÓN] Contenedor responsivo para móviles que agrupa el círculo y la imagen lateral -->
-        <div class="flex flex-col sm:flex-row md:flex-col items-center justify-center gap-6 w-full md:w-auto z-10 relative">
-            
-            <!-- [MODIFICACIÓN] Esta imagen SOLO aparece en móviles y tablets chicas, abajo del texto -->
-            <div class="block md:hidden w-full max-w-sm rounded-2xl overflow-hidden shadow-lg border border-brandCream">
-                <img src="imagenlateral2.png" alt="Taller Diseños VeRo" class="w-full h-auto object-cover">
+        <div class="flex flex-col sm:flex-row md:flex-col items-center justify-center gap-6 w-full md:w-auto z-10 relative opacity-0 animate-fade-in delay-200">
+            <div class="block md:hidden w-full max-w-sm rounded-2xl overflow-hidden shadow-lg border border-brandCream group">
+                <img src="imagenlateral2.png" alt="Taller Diseños VeRo" class="w-full h-auto object-cover transition-transform duration-700 ease-out hover:scale-105">
             </div>
 
-            <!-- Círculo de experiencia -->
-            <div class="md:absolute md:bottom-4 md:right-4 lg:right-24 bg-brandDarkBlue text-brandCream rounded-full w-40 h-40 sm:w-44 sm:h-44 flex flex-col justify-center items-center text-center p-4 shadow-xl border-4 border-brandCream z-20">
-                <p class="text-[9px] sm:text-[10px] tracking-widest uppercase font-light mb-1 text-brandGold">Hecho con</p>
-                <p class="text-xs tracking-widest uppercase font-semibold">Experiencia,</p>
-                <p class="text-[9px] sm:text-[10px] tracking-widest uppercase font-light my-1 text-brandGold">Entregado con</p>
-                <p class="text-xs tracking-widest uppercase font-semibold">Orgullo</p>
-                <div class="text-brandGold text-xs mt-1">✦ ✦ ✦</div>
+            <div class="md:absolute md:bottom-4 md:right-4 lg:right-24 bg-brandDarkBlue text-brandCream rounded-full w-36 h-36 sm:w-44 sm:h-44 flex flex-col justify-center items-center text-center p-4 shadow-xl border-4 border-brandCream z-20 transition-all duration-500 ease-out hover:scale-105 hover:rotate-2 hover:shadow-2xl">
+                <p class="text-[8px] sm:text-[10px] tracking-widest uppercase font-light mb-0.5 sm:mb-1 text-brandGold">Hecho con</p>
+                <p class="text-[10px] sm:text-xs tracking-widest uppercase font-semibold">Experiencia,</p>
+                <p class="text-[8px] sm:text-[10px] tracking-widest uppercase font-light my-0.5 sm:my-1 text-brandGold">Entregado con</p>
+                <p class="text-[10px] sm:text-xs tracking-widest uppercase font-semibold">Orgullo</p>
+                <div class="text-brandGold text-xs mt-1 animate-pulse">✦ ✦ ✦</div>
             </div>
         </div>
 
     </section>
 
-    <!-- SECCIÓN SERVICIOS -->
-    <section id="servicios" class="bg-gradient-to-b from-transparent to-brandCream/40 py-16 md:py-20 px-4 sm:px-6 border-t border-brandCream">
+    <section id="servicios" class="bg-gradient-to-b from-transparent to-brandCream/40 py-12 md:py-20 px-4 sm:px-6 border-t border-brandCream">
         <div class="max-w-7xl mx-auto text-center">
             <span class="text-xs uppercase tracking-widest text-brandGold font-semibold">Nuestros Servicios</span>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-gray-900 mt-2 mb-10 md:mb-12">
-                Creamos para cada momento <span class="font-script text-4xl md:text-5xl text-brandGold tracking-wide normal-case inline-block align-middle ml-1">importante</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-gray-900 mt-2 mb-8 md:mb-12">
+                Creamos para cada momento <span class="font-script text-3xl md:text-5xl text-brandGold tracking-wide normal-case inline-block align-middle ml-1">importante</span>
             </h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 sm:gap-4">
-                <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="uniformes.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Uniformes Escolares">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6 sm:gap-4 justify-items-center">
+                <div class="flex flex-col items-center group cursor-pointer w-full max-w-[220px]">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-2xl group-hover:border-brandGold transition-all duration-500 ease-out">
+                        <img src="uniformes.png" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out" alt="Uniformes Escolares">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Uniformes Escolares</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2 transition-colors duration-300 group-hover:text-brandGold group-hover:translate-y-[-2px]">Uniformes Escolares</h3>
                 </div>
-                <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="graduaciones.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Graduaciones">
+                <div class="flex flex-col items-center group cursor-pointer w-full max-w-[220px]">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-2xl group-hover:border-brandGold transition-all duration-500 ease-out">
+                        <img src="graduaciones.png" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out" alt="Graduaciones">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Graduaciones</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2 transition-colors duration-300 group-hover:text-brandGold group-hover:translate-y-[-2px]">Graduaciones</h3>
                 </div>
-                <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="bandasmusicales.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bandas Musicales">
+                <div class="flex flex-col items-center group cursor-pointer w-full max-w-[220px]">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-2xl group-hover:border-brandGold transition-all duration-500 ease-out">
+                        <img src="bandasmusicales.png" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out" alt="Bandas Musicales">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Bandas Musicales y Marching Band</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2 transition-colors duration-300 group-hover:text-brandGold group-hover:translate-y-[-2px]">Bandas Musicales y Marching Band</h3>
                 </div>
-                <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="quinceanos.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Quinceaños">
+                <div class="flex flex-col items-center group cursor-pointer w-full max-w-[220px]">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-2xl group-hover:border-brandGold transition-all duration-500 ease-out">
+                        <img src="quinceanos.png" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out" alt="Quinceaños">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Quinceaños</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2 transition-colors duration-300 group-hover:text-brandGold group-hover:translate-y-[-2px]">Quinceaños</h3>
                 </div>
-                <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="bodas.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bodas">
+                <div class="flex flex-col items-center group cursor-pointer w-full max-w-[220px]">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-2xl group-hover:border-brandGold transition-all duration-500 ease-out">
+                        <img src="bodas.png" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out" alt="Bodas">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Bodas</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2 transition-colors duration-300 group-hover:text-brandGold group-hover:translate-y-[-2px]">Bodas</h3>
                 </div>
-                <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="trajeshombres.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Trajes para Hombre">
+                <div class="flex flex-col items-center group cursor-pointer w-full max-w-[220px]">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-2xl group-hover:border-brandGold transition-all duration-500 ease-out">
+                        <img src="trajeshombres.png" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out" alt="Trajes para Hombre">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Trajes para Hombre</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2 transition-colors duration-300 group-hover:text-brandGold group-hover:translate-y-[-2px]">Trajes para Hombre</h3>
                 </div>
-                <div class="flex flex-col items-center group">
-                    <div class="arch-frame w-full max-w-[200px] sm:max-w-none h-64 overflow-hidden bg-white shadow-md group-hover:shadow-xl transition-shadow">
-                        <img src="composturas.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Composturas">
+                <div class="flex flex-col items-center group cursor-pointer w-full max-w-[220px]">
+                    <div class="arch-frame w-full h-64 overflow-hidden bg-white shadow-md group-hover:shadow-2xl group-hover:border-brandGold transition-all duration-500 ease-out">
+                        <img src="composturas.png" class="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out" alt="Composturas">
                     </div>
-                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2">Composturas y Arreglos</h3>
+                    <h3 class="text-[11px] font-bold tracking-wider uppercase text-gray-700 mt-3 text-center px-2 transition-colors duration-300 group-hover:text-brandGold group-hover:translate-y-[-2px]">Composturas y Arreglos</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN NOSOTROS / COBERTURA -->
     <section id="nosotros" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
         <div class="lg:col-span-6 space-y-6">
             <h2 class="text-xl sm:text-2xl font-serif text-gray-900">
@@ -221,45 +231,45 @@
             </p>
             
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm">
-                    <div class="text-xl mb-1">📐</div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800">Diseño y Patronaje</h4>
+                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm hover:shadow-md hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="text-xl mb-1 transform group-hover:scale-110 transition-transform duration-300">📐</div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800 transition-colors duration-300 group-hover:text-brandGold">Diseño y Patronaje</h4>
                     <p class="text-[11px] text-gray-500 mt-1">Asesoría experta en la selección de materiales.</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm">
-                    <div class="text-xl mb-1">⚙️</div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800">Producción Industrial</h4>
+                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm hover:shadow-md hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="text-xl mb-1 transform group-hover:rotate-45 transition-transform duration-300">⚙️</div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800 transition-colors duration-300 group-hover:text-brandGold">Producción Industrial</h4>
                     <p class="text-[11px] text-gray-500 mt-1">Escalabilidad óptima para grandes volúmenes.</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm">
-                    <div class="text-xl mb-1">🔎</div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800">Control de Calidad</h4>
+                <div class="bg-white p-4 rounded-lg border border-brandCream shadow-sm hover:shadow-md hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="text-xl mb-1 transform group-hover:scale-110 transition-transform duration-300">🔎</div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-800 transition-colors duration-300 group-hover:text-brandGold">Control de Calidad</h4>
                     <p class="text-[11px] text-gray-500 mt-1">Supervisión minuciosa en cada etapa.</p>
                 </div>
             </div>
         </div>
 
-        <div id="cobertura" class="lg:col-span-6 space-y-6 bg-brandCream/30 p-6 sm:p-8 rounded-2xl border border-brandCream">
+        <div id="cobertura" class="lg:col-span-6 space-y-6 bg-brandCream/30 p-6 sm:p-8 rounded-2xl border border-brandCream hover:shadow-md transition-shadow duration-500">
             <h3 class="text-xs uppercase tracking-widest text-gray-500 text-center font-semibold">Hemos llevado nuestro trabajo a:</h3>
             
             <div class="flex flex-wrap justify-center sm:justify-between items-center gap-6 sm:gap-4 max-w-md mx-auto pt-4 relative">
                 <div class="absolute h-[1px] bg-dashed bg-brandGold/40 left-6 right-6 top-1/3 -z-10 border-t border-dashed border-brandGold hidden sm:block"></div>
                 
-                <div class="text-center min-w-[70px]">
-                    <span class="text-2xl block mb-1">⛪</span>
-                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Puebla</span>
+                <div class="text-center min-w-[60px] sm:min-w-[70px] group cursor-default">
+                    <span class="text-2xl block mb-1 transform group-hover:translate-y-[-4px] transition-transform duration-300">⛪</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700 group-hover:text-brandGold transition-colors duration-300">Puebla</span>
                 </div>
-                <div class="text-center min-w-[70px]">
-                    <span class="text-2xl block mb-1">⛪</span>
-                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Tlaxcala</span>
+                <div class="text-center min-w-[60px] sm:min-w-[70px] group cursor-default">
+                    <span class="text-2xl block mb-1 transform group-hover:translate-y-[-4px] transition-transform duration-300">⛪</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700 group-hover:text-brandGold transition-colors duration-300">Tlaxcala</span>
                 </div>
-                <div class="text-center min-w-[70px]">
-                    <span class="text-2xl block mb-1">⛪</span>
-                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">Veracruz</span>
+                <div class="text-center min-w-[60px] sm:min-w-[70px] group cursor-default">
+                    <span class="text-2xl block mb-1 transform group-hover:translate-y-[-4px] transition-transform duration-300">⛪</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700 group-hover:text-brandGold transition-colors duration-300">Veracruz</span>
                 </div>
-                <div class="text-center min-w-[70px]">
-                    <span class="text-2xl block mb-1">⛪</span>
-                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700">EdoMex</span>
+                <div class="text-center min-w-[60px] sm:min-w-[70px] group cursor-default">
+                    <span class="text-2xl block mb-1 transform group-hover:translate-y-[-4px] transition-transform duration-300">⛪</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gray-700 group-hover:text-brandGold transition-colors duration-300">EdoMex</span>
                 </div>
             </div>
 
@@ -272,38 +282,37 @@
         </div>
     </section>
 
-    <!-- PIE DE PÁGINA -->
     <footer id="contacto" class="bg-brandDarkBlue text-brandCream pt-12 md:pt-16 pb-8 px-4 sm:px-6 rounded-t-[2rem] sm:rounded-t-[2.5rem] shadow-inner relative overflow-hidden">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 items-center text-center md:text-left border-b border-white/10 pb-10 md:pb-12">
             
             <div class="flex justify-center md:justify-start space-y-3">
-                <img src="logo.png" alt="Diseños VeRo" class="h-24 md:h-28 w-auto object-contain brightness-0 invert opacity-90">
+                <img src="logo.png" alt="Diseños VeRo" class="h-20 md:h-28 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity duration-300">
             </div>
 
             <div class="space-y-1">
-                <p class="font-serif italic text-lg sm:text-xl text-white font-light leading-relaxed">
+                <p class="font-serif italic text-base sm:text-xl text-white font-light leading-relaxed">
                     Más que confección, <br class="hidden md:block">
-                    <span class="font-script text-3xl text-brandGold tracking-wide normal-case">creamos identidad.</span>
+                    <span class="font-script text-2xl sm:text-3xl text-brandGold tracking-wide normal-case">creamos identidad.</span>
                 </p>
                 <p class="text-[10px] uppercase tracking-widest text-gray-400 pt-1">Más de 15 años de trayectoria</p>
             </div>
 
             <div class="space-y-3 text-xs sm:text-sm font-light text-gray-300 flex flex-col items-center md:items-start">
                 <h4 class="text-xs font-bold uppercase tracking-widest text-brandGold">Diseños VeRo</h4>
-                <p class="flex items-center space-x-2">
-                    <span>📍</span> <span>Manuel M. Flores 3318, Santa Cruz, Colonia 3 de mayo, 75520 Cdad. Serdán, Pue., México</span>
+                <p class="flex items-start space-x-2 text-center md:text-left">
+                    <span class="mt-0.5">📍</span> <span>Manuel M. Flores 3318, Santa Cruz, Colonia 3 de mayo, 75520 Cdad. Serdán, Pue., México</span>
                 </p>
-                <p class="flex items-center space-x-2 font-medium text-white">
-                    <span>📞</span> <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n.%0AMi%20nombre%20es%3A%20" target="_blank" class="hover:text-brandGold transition-colors">245 154 2640</a>
+                <p class="flex items-center space-x-2 font-medium text-white group">
+                    <span>📞</span> <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n.%0AMi%20nombre%20es%3A%20" target="_blank" class="hover:text-brandGold transition-colors duration-300">245 154 2640</a>
                 </p>
                 <p class="flex items-center space-x-2">
-                    <span>✉️</span> <a href="mailto:veroconfeccionesydisenos@gmail.com" class="hover:text-brandGold transition-colors">veroconfeccionesydisenos@gmail.com</a>
+                    <span>✉️</span> <a href="mailto:veroconfeccionesydisenos@gmail.com" class="hover:text-brandGold transition-colors duration-300">veroconfeccionesydisenos@gmail.com</a>
                 </p>
                 
                 <div class="flex space-x-5 pt-2 text-lg">
-                    <a href="https://www.facebook.com/gonz.angela.3" class="hover:text-brandGold transition-colors" title="Facebook">📘</a>
-                    <a href="#" class="hover:text-brandGold transition-colors" title="Instagram">📸</a>
-                    <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n.%0AMi%20nombre%20es%3A%20" target="_blank" class="hover:text-brandGold transition-colors" title="WhatsApp">💬</a>
+                    <a href="https://www.facebook.com/gonz.angela.3" class="hover:text-brandGold hover:scale-110 transition-transform duration-300" title="Facebook">📘</a>
+                    <a href="#" class="hover:text-brandGold hover:scale-110 transition-transform duration-300" title="Instagram">📸</a>
+                    <a href="https://wa.me/522451542640?text=Hola%20visite%20tu%20p%C3%A1gina%20y%20necesito%20informaci%C3%B3n.%0AMi%20nombre%20es%3A%20" target="_blank" class="hover:text-brandGold hover:scale-110 transition-transform duration-300" title="WhatsApp">💬</a>
                 </div>
             </div>
         </div>
